@@ -1,4 +1,12 @@
-
+/**
+ * 
+ * @author Valerie J. Smith
+ * IT-145 Foundations in Application Development
+ * SNHU University
+ * Instructor Osborne
+ * March 18, 2020
+ *
+ */
 public class Pet {
 	
 	//  create attributes with the correct type
@@ -6,6 +14,7 @@ public class Pet {
 	private String petName;
 	private int petAge;
 	private int dogSpace;
+	private int catSpace;
 	private int daysStay;
 	private Double amountDue;
 	
@@ -40,6 +49,7 @@ public class Pet {
 		      petName = "Damian";
 		      petAge = 99;
 		      dogSpace = 29;
+		      catSpace = 10;
 		      daysStay = 3;
 		      amountDue = 40.00;
 		   
@@ -73,6 +83,12 @@ public class Pet {
 	   public int getDogSpace() {
 		   return dogSpace;
 	   }
+	   public void setCatSpace(int userCatSpace) {
+		   catSpace = userCatSpace;
+	   }
+	   public int getCatSpace( ) {
+		   return catSpace;
+	   }
 	   
 	   public void setDaysStay(int petDaysStay) {
 		   daysStay = petDaysStay;
@@ -95,6 +111,7 @@ public class Pet {
 		      System.out.println("Pet Name: " + petName);
 		      System.out.println("Pet Age: " + petAge);
 		      System.out.println("Dog Space: " + dogSpace);
+		      System.out.println("Cat Space: " + catSpace);
 		      System.out.println("Days Staying: " + daysStay);
 		      System.out.println("Amount Due: " + amountDue);
 		    

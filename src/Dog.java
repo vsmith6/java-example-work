@@ -32,9 +32,18 @@ public class Dog {
 	public boolean getGrooming() {
 		return grooming;
 	}
+
+	// not sure if this accessor/mutator setter/getter is needed due to conflicting instructions
+	// added these to assignment and got an A so I guess they are needed.
+	public void setDogSpaceNbr(int userDogSpaceNbr){
+		dogSpaceNbr = userDogSpaceNbr;
+	}
+	public int getDogSpaceNbr() {
+		return dogSpaceNbr;
+	}
 	
 
-	// set newDog as a new instance of the Pet class--> dont need this!!
+
 	private Pet newDog;
 	  public void setNewDog(Pet pet) {
 	      newDog = pet;
@@ -85,6 +94,7 @@ public class Dog {
         newVisitor.getPetName();
         newVisitor.getPetAge();
         newVisitor.getDogSpace();
+        newVisitor.getCatSpace();
         newVisitor.getDaysStay();
         newVisitor.getAmountDue();
         
@@ -98,6 +108,8 @@ public class Dog {
        
         fido.setDogWeight(45);
         fido.setGrooming(true);
+        fido.setDogSpaceNbr(12);
+        
         System.out.println("Pet Name: " + newVisitor.getPetName());
 		
 		

@@ -32,6 +32,14 @@ public class SNHUDog {
 			return grooming;
 		}
 		
+		// added these to assignment and got an A so I guess they are needed.
+		public void getDogSpaceNbr(int userDogSpaceNbr){
+			dogSpaceNbr = userDogSpaceNbr;
+		}
+		public int setDogSpaceNbr() {
+			return dogSpaceNbr;
+		}
+		
 
 		// set newDog as a new instance of the Pet class
 		private Pet newDog;
@@ -64,6 +72,8 @@ public class SNHUDog {
 	       // use our new dog to set the new dog's weight and to offer grooming
 	        fido.setDogWeight(45);
 	        fido.setGrooming(true);
+	
+	  
 		 //  see what the Dog object looks like	
 			fido.print();
 			
